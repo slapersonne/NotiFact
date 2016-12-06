@@ -114,7 +114,7 @@ namespace NotiFact.UWP
         {
             var channel = await PushNotificationChannelManager.CreatePushNotificationChannelForApplicationAsync();
 
-            var hub = new NotificationHub("< your hub name>", "<Your DefaultListenSharedAccessSignature connection string>");
+            var hub = new NotificationHub("NotiFact", "Endpoint=sb://notifact.servicebus.windows.net/;SharedAccessKeyName=DefaultListenSharedAccessSignature;SharedAccessKey=a3rbvOOdEuZyJ5Gkp+Sv2hmynaFpDQOt87PBci+2pAo=");
             var result = await hub.RegisterNativeAsync(channel.Uri);
 
             // Displays the registration ID so you know it was successful
