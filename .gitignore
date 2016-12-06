@@ -6,9 +6,8 @@
 **/AppPackages/*
 **/packages/*
 **/obj/Debug/*
-
 **Release/*
-
+*.suo
 
 
 =======
