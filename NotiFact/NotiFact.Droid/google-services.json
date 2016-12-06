@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "672494234051",
+    "firebase_url": "https://ainnov-6c79b.firebaseio.com",
+    "project_id": "ainnov-6c79b",
+    "storage_bucket": "ainnov-6c79b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672494234051:android:95345105f9956792",
+        "android_client_info": {
+          "package_name": "com.ainnov.notifact"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "672494234051-ohcmiu2mlfuuum82dcn8n8nmv7rrr2td.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAab1CI0jBFPFwkwCeFfOYNvNbTJjc98J4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

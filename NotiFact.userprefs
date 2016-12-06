@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{E17BF66E-2516-4E8A-B429-3EBA4F92491E}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workbench ActiveDocument="NotiFact/NotiFact.Droid/NotiFactFirebaseMessagingService.cs">
+    <Files>
+      <File FileName="NotiFact/NotiFact.Droid/MainActivity.cs" Line="19" Column="3" />
+      <File FileName="NotiFact/NotiFact.Droid/NotiFactFirebaseInstanceService.cs" Line="11" Column="40" />
+      <File FileName="NotiFact/NotiFact.Droid/NotiFactFirebaseMessagingService.cs" Line="11" Column="44" />
+      <File FileName="NotiFact/NotiFact.Droid/Properties/AndroidManifest.xml" Line="17" Column="12" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.NotiFact.Droid PreferredExecutionTarget="Android.EmulatorAndroid" />
+</Properties>
