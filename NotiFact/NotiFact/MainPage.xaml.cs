@@ -13,5 +13,7 @@ namespace NotiFact
         {
             InitializeComponent();
         }
+
+        public List<string> Notifications { get; set; }
     }
 }

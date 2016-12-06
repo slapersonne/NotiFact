@@ -1,6 +1,15 @@
+#Compiled sources
+**/obj/Debug/
+**/obj/Release/
+**/bin/Debug/
+**/bin/Release/
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
+
+#Cached files
+*.cache
 
 # Folder config file
 Desktop.ini
