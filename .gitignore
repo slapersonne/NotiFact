@@ -1,8 +1,6 @@
 #Compiled sources
-**/obj/Debug/
-**/obj/Release/
-**/bin/Debug/
-**/bin/Release/
+**/Debug/*
+**Release/*
 
 # Windows image file caches
 Thumbs.db

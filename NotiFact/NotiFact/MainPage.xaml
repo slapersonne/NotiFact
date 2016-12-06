@@ -10,15 +10,15 @@
            HorizontalOptions="Center" />
     
     <ListView ItemsSource="{Binding Notifications}">
-      <Label Text="Welcome to Xamarin Forms!"
-             VerticalOptions="Center"
-             HorizontalOptions="Center" />
-      <Label Text="Welcome to Xamarin Forms!"
-             VerticalOptions="Center"
-             HorizontalOptions="Center" />
-      <Label Text="Welcome to Xamarin Forms!"
-             VerticalOptions="Center"
-             HorizontalOptions="Center" />
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <ViewCell.View>
+              <Label Text="{Binding}"/>
+            </ViewCell.View>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
     </ListView>
   </StackLayout>  
 

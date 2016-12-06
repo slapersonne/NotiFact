@@ -12,6 +12,8 @@ namespace NotiFact
         public MainPage()
         {
             InitializeComponent();
+
+            Notifications = new List<string> { "Notif1", "Notif2", "Notif3" };
         }
 
         public List<string> Notifications { get; set; }
