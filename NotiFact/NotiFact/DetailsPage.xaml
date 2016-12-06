@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:NotiFact;assembly=NotiFact"
+             x:Class="NotiFact.DetailsPage">
+  <ContentPage.BindingContext>
+    <local:NotificationViewModel />
+  </ContentPage.BindingContext>
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="20"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="3*"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+    <Label Grid.Row="0" Text="NOTIFACT" />
+    <Grid Grid.Row="1">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="3*" />
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+      <Label Grid.Column="0" Text="{Binding Notification.Type}" HorizontalOptions="Start" VerticalOptions="Center"/>
+      <Label Grid.Column="1" Text="{Binding Notification.Title}" HorizontalOptions="Start" VerticalOptions="Center"/>
+      <Label Grid.Column="2" Text="{Binding Notification.Severity}" HorizontalOptions="End" VerticalOptions="Center"/>
+    </Grid>
+    <StackLayout Grid.Row="2" Orientation="Vertical">
+      <Label Text="Description" />
+      <Label Text="{Binding Notification.Message}" VerticalOptions="Center"/>
+    </StackLayout>
+    <Button Grid.Row="3" Text="PRIS EN COMPTE"/>
+    <Button Grid.Row="4" Text="ACCUEIL"/>
+  </Grid>
+</ContentPage>
