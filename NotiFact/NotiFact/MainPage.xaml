@@ -4,8 +4,22 @@
              xmlns:local="clr-namespace:NotiFact"
              x:Class="NotiFact.MainPage">
 
-  <Label Text="Welcome to Xamarin Forms!"
+  <StackLayout>
+    <Label Text="Welcome to Xamarin Forms!"
            VerticalOptions="Center"
            HorizontalOptions="Center" />
+    
+    <ListView ItemsSource="{Binding Notifications}">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <ViewCell.View>
+              <Label Text="{Binding}"/>
+            </ViewCell.View>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </StackLayout>  
 
 </ContentPage>
