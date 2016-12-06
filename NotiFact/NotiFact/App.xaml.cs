@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+
 using Xamarin.Forms;
 
 namespace NotiFact
@@ -30,5 +31,7 @@ namespace NotiFact
         {
             // Handle when your app resumes
         }
+
+        
     }
 }

@@ -14,6 +14,12 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.Networking.PushNotifications;
+using Newtonsoft.Json.Linq;
+using Microsoft.WindowsAzure.MobileServices;
+using System.Threading.Tasks;
+using Microsoft.WindowsAzure.Messaging;
+using Windows.UI.Popups;
 
 namespace NotiFact.UWP
 {
@@ -102,6 +108,22 @@ namespace NotiFact.UWP
             var deferral = e.SuspendingOperation.GetDeferral();
             //TODO: Save application state and stop any background activity
             deferral.Complete();
+        }
+
+        private async Task InitNotificationsAsync()
+        {
+            var channel = await PushNotificationChannelManager.CreatePushNotificationChannelForApplicationAsync();
+
+            var hub = new NotificationHub("< your hub name>", "<Your DefaultListenSharedAccessSignature connection string>");
+            var result = await hub.RegisterNativeAsync(channel.Uri);
+
+            // Displays the registration ID so you know it was successful
+            if (result.RegistrationId != null)
+            {
+                var dialog = new MessageDialog("Registration successful: " + result.RegistrationId);
+                dialog.Commands.Add(new UICommand("OK"));
+                await dialog.ShowAsync();
+            }
         }
     }
 }

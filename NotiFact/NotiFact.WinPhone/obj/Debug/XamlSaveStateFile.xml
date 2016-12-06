@@ -1,9 +1,11 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <ReferenceAssembly PathName="c:\projects\notifact\packages\xamarin.forms.2.0.0.6482\lib\wpa81\xamarin.forms.core.dll" HashGuid="c8a30eb8-5ae8-352d-b94f-7c913a7557ba" />
-    <ReferenceAssembly PathName="c:\projects\notifact\packages\xamarin.forms.2.0.0.6482\lib\wpa81\xamarin.forms.platform.dll" HashGuid="d9389e38-8a39-bed5-406b-7a34fe4704ea" />
-    <ReferenceAssembly PathName="c:\projects\notifact\packages\xamarin.forms.2.0.0.6482\lib\wpa81\xamarin.forms.platform.winrt.dll" HashGuid="dbd728c2-e21b-4125-2be0-f7931b605baa" />
-    <ReferenceAssembly PathName="c:\projects\notifact\packages\xamarin.forms.2.0.0.6482\lib\wpa81\xamarin.forms.platform.winrt.phone.dll" HashGuid="f7f417b9-5b4a-9692-10d4-bb874feaa2e9" />
-    <ReferenceAssembly PathName="c:\projects\notifact\packages\xamarin.forms.2.0.0.6482\lib\wpa81\xamarin.forms.xaml.dll" HashGuid="2828b56a-3245-7d15-6650-dfb4f30cfa91" />
+    <LocalAssembly PathName="c:\users\fx12357\documents\ainov\notifact\notifact\notifact.winphone\obj\debug\intermediatexaml\notifact.winphone.exe" HashGuid="d153625c-dd78-efda-fd7c-4a0bccdf665f" />
+    <ReferenceAssembly PathName="c:\users\fx12357\documents\ainov\notifact\notifact\notifact\bin\debug\notifact.dll" HashGuid="6c1a0f9e-91fd-f788-4a5e-5d7d1fc4b9e0" />
+    <ReferenceAssembly PathName="c:\users\fx12357\documents\ainov\notifact\packages\xamarin.forms.2.0.0.6482\lib\wpa81\xamarin.forms.core.dll" HashGuid="c8a30eb8-5ae8-352d-b94f-7c913a7557ba" />
+    <ReferenceAssembly PathName="c:\users\fx12357\documents\ainov\notifact\packages\xamarin.forms.2.0.0.6482\lib\wpa81\xamarin.forms.platform.dll" HashGuid="d9389e38-8a39-bed5-406b-7a34fe4704ea" />
+    <ReferenceAssembly PathName="c:\users\fx12357\documents\ainov\notifact\packages\xamarin.forms.2.0.0.6482\lib\wpa81\xamarin.forms.platform.winrt.dll" HashGuid="dbd728c2-e21b-4125-2be0-f7931b605baa" />
+    <ReferenceAssembly PathName="c:\users\fx12357\documents\ainov\notifact\packages\xamarin.forms.2.0.0.6482\lib\wpa81\xamarin.forms.platform.winrt.phone.dll" HashGuid="f7f417b9-5b4a-9692-10d4-bb874feaa2e9" />
+    <ReferenceAssembly PathName="c:\users\fx12357\documents\ainov\notifact\packages\xamarin.forms.2.0.0.6482\lib\wpa81\xamarin.forms.xaml.dll" HashGuid="2828b56a-3245-7d15-6650-dfb4f30cfa91" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

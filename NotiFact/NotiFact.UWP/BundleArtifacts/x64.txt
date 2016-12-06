@@ -1,0 +1,2 @@
+MainPackage=C:\Users\FX12357\Documents\AINOV\NotiFact\NotiFact\NotiFact.UWP\bin\x64\Debug\NotiFact.UWP_1.0.0.0_x64_Debug.appx
+SymbolPackage=C:\Users\FX12357\Documents\AINOV\NotiFact\NotiFact\NotiFact.UWP\AppPackages\NotiFact.UWP_1.0.0.0_Debug_Test\NotiFact.UWP_1.0.0.0_x64_Debug.appxsym
