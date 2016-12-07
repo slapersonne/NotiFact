@@ -136,9 +136,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\appicon.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\logo.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\maintenance.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\appicon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\p0.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\p1.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\p2.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\p3.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\securite.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
@@ -161,6 +166,7 @@
     <Folder Include="Resources\drawable\" />
     <Folder Include="Resources\drawable-hdpi\" />
     <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Resources\images\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />

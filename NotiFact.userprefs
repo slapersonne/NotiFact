@@ -1,21 +1,24 @@
 ﻿<Properties StartupConfiguration="{E17BF66E-2516-4E8A-B429-3EBA4F92491E}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.Workbench ActiveDocument="NotiFact/NotiFact/Database/DatabaseService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="NotiFact/NotiFact/MainPage.xaml.cs">
     <Files>
       <File FileName="NotiFact/NotiFact.Droid/MainActivity.cs" Line="28" Column="30" />
       <File FileName="NotiFact/NotiFact.Droid/NotiFactFirebaseInstanceService.cs" Line="11" Column="40" />
-      <File FileName="NotiFact/NotiFact.Droid/NotiFactFirebaseMessagingService.cs" Line="1" Column="1" />
+      <File FileName="NotiFact/NotiFact.Droid/NotiFactFirebaseMessagingService.cs" Line="10" Column="11" />
       <File FileName="NotiFact/NotiFact.Droid/Properties/AndroidManifest.xml" Line="1" Column="1" />
-      <File FileName="NotiFact/NotiFact/DetailsPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="NotiFact/NotiFact/DetailsPage.xaml.cs" Line="9" Column="61" />
       <File FileName="NotiFact/NotiFact/App.xaml.cs" Line="1" Column="1" />
       <File FileName="NotiFact/NotiFact/LoginPage.xaml.cs" Line="1" Column="1" />
       <File FileName="NotiFact/NotiFact/ViewModels/LoginViewModel.cs" Line="1" Column="1" />
       <File FileName="NotiFact/NotiFact/obj/Debug/NotiFact.LoginPage.xaml.g.cs" Line="1" Column="1" />
-      <File FileName="NotiFact/NotiFact/ViewModels/NotificationViewModel.cs" Line="1" Column="1" />
+      <File FileName="NotiFact/NotiFact/ViewModels/NotificationViewModel.cs" Line="34" Column="32" />
       <File FileName="NotiFact/NotiFact.Droid/Resources/values/styles.xml" Line="1" Column="1" />
-      <File FileName="NotiFact/NotiFact/ViewModels/MainViewModel.cs" Line="1" Column="1" />
-      <File FileName="NotiFact/NotiFact/MainPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="NotiFact/NotiFact/ViewModels/MainViewModel.cs" Line="49" Column="24" />
+      <File FileName="NotiFact/NotiFact/MainPage.xaml.cs" Line="27" Column="4" />
       <File FileName="NotiFact/NotiFact.Droid/packages.config" Line="11" Column="40" />
-      <File FileName="NotiFact/NotiFact/Database/DatabaseService.cs" Line="9" Column="1" />
+      <File FileName="NotiFact/NotiFact/Database/DatabaseService.cs" Line="13" Column="6" />
+      <File FileName="NotiFact/NotiFact/packages.config" Line="1" Column="1" />
+      <File FileName="NotiFact/NotiFact/Converters/SeverityToImageConverter.cs" Line="25" Column="32" />
+      <File FileName="NotiFact/NotiFact/Converters/TypeToImageConverter.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
