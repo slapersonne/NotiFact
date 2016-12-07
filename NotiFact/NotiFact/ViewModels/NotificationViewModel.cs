@@ -18,10 +18,10 @@ namespace NotiFact
         public Command ReturnCommand { get; protected set; }
         public Command AcknowledgeCommand { get; protected set; }
 
-        public NotificationViewModel(INavigation nav)
+		public NotificationViewModel(INavigation nav, NotificationMessage notifMessage)
         {
             _nav = nav;
-            Notification = new NotificationMessage
+			/*Notification = new NotificationMessage
             {
                 Title = "Message Title",
                 Message = "bla bla bla très important avec des caractères spéciaux et des \n qui vont bien et aussi des " + Environment.NewLine + "pour tester.",
@@ -30,7 +30,8 @@ namespace NotiFact
                 IsRead = false,
                 Severity = 2,
                 Type = NotificationType.Maintenance
-            };
+            };*/
+			Notification = notifMessage;
 
             ReturnCommand = new Command(ExecuteReturn);
             AcknowledgeCommand = new Command(ExecuteAcknowledge, CanAcknowledge);

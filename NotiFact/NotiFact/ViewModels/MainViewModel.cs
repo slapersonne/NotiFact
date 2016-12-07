@@ -44,18 +44,18 @@ namespace NotiFact
 			 	navService.PushAsync(new MainPage());
 			});
 			_messagesList = new List<NotificationMessage> {
-				new NotificationMessage{ Title="Maintenance", Message="Vous devez faire la maintenance"},
-				new NotificationMessage{ Title="Intervention", Message="Trappe à réparer"},
-				new NotificationMessage{ Title="Avertissement", Message="Vanne hydraulique à contrôler"},
-				new NotificationMessage{ Title="Maintenance", Message="Vous devez faire la maintenance"},
-				new NotificationMessage{ Title="Intervention", Message="Trappe à réparer"},
-				new NotificationMessage{ Title="Avertissement", Message="Vanne hydraulique à contrôler"},
-				new NotificationMessage{ Title="Maintenance", Message="Vous devez faire la maintenance"},
-				new NotificationMessage{ Title="Intervention", Message="Trappe à réparer"},
-				new NotificationMessage{ Title="Avertissement", Message="Vanne hydraulique à contrôler"},
-				new NotificationMessage{ Title="Maintenance", Message="Vous devez faire la maintenance"},
-				new NotificationMessage{ Title="Intervention", Message="Trappe à réparer"},
-				new NotificationMessage{ Title="Avertissement", Message="Vanne hydraulique à contrôler"}
+				new NotificationMessage{ Title="Maintenance", Severity=2, Message="Vous devez faire la maintenance"},
+				new NotificationMessage{ Title="Intervention", Severity=1, Message="Trappe à réparer"},
+				new NotificationMessage{ Title="Avertissement", Severity=3, Message="Vanne hydraulique à contrôler"},
+				new NotificationMessage{ Title="Maintenance", Severity=3, Message="Vous devez faire la maintenance"},
+				new NotificationMessage{ Title="Intervention", Severity=0, Message="Trappe à réparer"},
+				new NotificationMessage{ Title="Avertissement", Severity=1, Message="Vanne hydraulique à contrôler"},
+				new NotificationMessage{ Title="Maintenance", Severity=1, Message="Vous devez faire la maintenance"},
+				new NotificationMessage{ Title="Intervention", Severity=3, Message="Trappe à réparer"},
+				new NotificationMessage{ Title="Avertissement", Severity=2, Message="Vanne hydraulique à contrôler"},
+				new NotificationMessage{ Title="Maintenance", Severity=0, Message="Vous devez faire la maintenance"},
+				new NotificationMessage{ Title="Intervention", Severity=2, Message="Trappe à réparer"},
+				new NotificationMessage{ Title="Avertissement", Severity=1, Message="Vanne hydraulique à contrôler"}
 			};
         }
 

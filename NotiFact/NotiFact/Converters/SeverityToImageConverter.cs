@@ -18,13 +18,13 @@ namespace NotiFact.Converters
             switch (severity)
             {
                 case 0:
-                    return "";
+                    return "p0.png";
                 case 1:
-                    return "";
+                    return "p1.png";
                 case 2:
-                    return "";
+                    return "p2.png";
                 case 3:
-                    return "";
+                    return "p3.png";
                 default:
                     if (severity < 0)
                         return "";

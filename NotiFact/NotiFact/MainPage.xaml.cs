@@ -16,7 +16,7 @@ namespace NotiFact
             InitializeComponent();
 
 			list.ItemSelected += (sender, e) => {
-				Navigation.PushAsync(new DetailsPage());
+				Navigation.PushAsync(new DetailsPage(e.SelectedItem as NotificationMessage));
 			};
         }
 
