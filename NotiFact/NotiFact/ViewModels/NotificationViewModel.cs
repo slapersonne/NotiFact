@@ -29,7 +29,7 @@ namespace NotiFact
                 CreationDate = DateTime.Now,
                 IsRead = false,
                 Severity = 2,
-                Type = "Securité"
+				Type = NotificationType.Maintenance
             };
 
             ReturnCommand = new Command(ExecuteReturn);

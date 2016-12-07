@@ -26,6 +26,8 @@ namespace NotiFact.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.ApplicationName = global::NotiFact.Droid.Resource.String.ApplicationName;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.Hello = global::NotiFact.Droid.Resource.String.Hello;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::NotiFact.Droid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -2961,6 +2963,12 @@ namespace NotiFact.Droid
 		public partial class String
 		{
 			
+			// aapt resource value: 0x7f070028
+			public const int ApplicationName = 2131165224;
+			
+			// aapt resource value: 0x7f070027
+			public const int Hello = 2131165223;
+			
 			// aapt resource value: 0x7f070013
 			public const int abc_action_bar_home_description = 2131165203;
 			
@@ -3030,23 +3038,23 @@ namespace NotiFact.Droid
 			// aapt resource value: 0x7f070000
 			public const int common_google_play_services_unknown_issue = 2131165184;
 			
-			// aapt resource value: 0x7f070029
-			public const int default_web_client_id = 2131165225;
-			
-			// aapt resource value: 0x7f07002a
-			public const int firebase_database_url = 2131165226;
-			
-			// aapt resource value: 0x7f070027
-			public const int gcm_defaultSenderId = 2131165223;
-			
 			// aapt resource value: 0x7f07002b
-			public const int google_api_key = 2131165227;
-			
-			// aapt resource value: 0x7f070028
-			public const int google_app_id = 2131165224;
+			public const int default_web_client_id = 2131165227;
 			
 			// aapt resource value: 0x7f07002c
-			public const int google_crash_reporting_api_key = 2131165228;
+			public const int firebase_database_url = 2131165228;
+			
+			// aapt resource value: 0x7f070029
+			public const int gcm_defaultSenderId = 2131165225;
+			
+			// aapt resource value: 0x7f07002d
+			public const int google_api_key = 2131165229;
+			
+			// aapt resource value: 0x7f07002a
+			public const int google_app_id = 2131165226;
+			
+			// aapt resource value: 0x7f07002e
+			public const int google_crash_reporting_api_key = 2131165230;
 			
 			// aapt resource value: 0x7f070001
 			public const int mr_button_content_description = 2131165185;
