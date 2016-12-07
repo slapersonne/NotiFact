@@ -31,7 +31,7 @@ namespace NotiFact.Droid
 			var defaultSoundUri = RingtoneManager.GetDefaultUri(RingtoneType.Notification);
 			var notificationBuilder = new NotificationCompat.Builder(this)
 															.SetContentTitle(notification.Title)
-															.SetSmallIcon(Resource.Drawable.icon)
+			                                                .SetSmallIcon(Resource.Drawable.maintenance)
 															.SetContentText(notification.Body)
 															.SetAutoCancel(true)
 															.SetSound(defaultSoundUri)

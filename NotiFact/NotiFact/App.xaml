@@ -1,10 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="NotiFact.App">
   <Application.Resources>
 
-    <!-- Application resource dictionary -->
+    <ResourceDictionary>
+            <Color x:Key="BlueMichelin">#0061a9</Color>
+            <Color x:Key="YellowMichelin">#ffe822</Color>
+    </ResourceDictionary>
 
   </Application.Resources>
 </Application>

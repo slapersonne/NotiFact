@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+		xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="NotiFact.LoginPage"
+		BackgroundColor="White">
+	<ContentPage.Content>
+	<StackLayout BackgroundColor="Transparent" Padding="20" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+			<Image Source="logo.png" HorizontalOptions="Center"/>
+			<Entry BackgroundColor="White" PlaceholderColor="{StaticResource BlueMichelin}" Placeholder="Identifiant" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
+			<Entry BackgroundColor="White" PlaceholderColor="{StaticResource BlueMichelin}" Placeholder="Mot de passe" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
+			<Label Text="Mot de passe oublié"/>
+			<Button BackgroundColor="{StaticResource BlueMichelin}" TextColor="{StaticResource YellowMichelin}" Text="Se connecter" Command="{Binding LoginCommand}"/>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

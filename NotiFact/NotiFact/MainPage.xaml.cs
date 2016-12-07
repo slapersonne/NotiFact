@@ -12,7 +12,18 @@ namespace NotiFact
     {
         public MainPage()
         {
+			BindingContext = new MainViewModel(Navigation);
             InitializeComponent();
+
+			list.ItemSelected += (sender, e) => {
+				Navigation.PushAsync(new DetailsPage());
+			};
         }
+
+		protected override void OnAppearing()
+		{
+			NavigationPage.SetHasBackButton(this, false);
+			base.OnAppearing();
+		}
     }
 }

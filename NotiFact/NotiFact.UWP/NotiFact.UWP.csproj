@@ -96,6 +96,7 @@
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
     <None Include="NotiFact.UWP_StoreKey.pfx" />
     <None Include="project.json" />
+    <None Include="Assets\logo.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">

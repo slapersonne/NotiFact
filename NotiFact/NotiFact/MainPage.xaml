@@ -1,11 +1,32 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:NotiFact"
              x:Class="NotiFact.MainPage">
 
-  <Label Text="Welcome to Xamarin Forms!"
-           VerticalOptions="Center"
-           HorizontalOptions="Center" />
+  	<StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+		<ListView x:Name="list" BackgroundColor="Transparent" RowHeight="85" ItemsSource="{Binding MessagesList}">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<ViewCell>
+						<Grid Padding="5" BackgroundColor="White">
+							<Grid.RowDefinitions>
+								<RowDefinition Height="0.5*"></RowDefinition>
+								<RowDefinition Height="0.5*"></RowDefinition>
+							</Grid.RowDefinitions>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="0.15*"></ColumnDefinition>
+								<ColumnDefinition Width="0.7*"></ColumnDefinition>
+								<ColumnDefinition Width="0.15*"></ColumnDefinition>
+							</Grid.ColumnDefinitions>
+							<Image Grid.RowSpan="2" Grid.Column="0" Source="maintenance.png"/>
+							<Label Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" Text="{Binding Title}" TextColor="Gray" FontAttributes="Bold" FontSize="20"/>
+							<Label Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Start" HorizontalOptions="StartAndExpand" Text="{Binding Message}" VerticalOptions="Start" VerticalTextAlignment="Start" FontSize="18" TextColor="Silver"/>
+						</Grid>
+					</ViewCell>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+	</StackLayout>
 
 </ContentPage>
