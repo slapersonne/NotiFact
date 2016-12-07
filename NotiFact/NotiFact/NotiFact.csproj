@@ -38,14 +38,11 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="Database\DatabaseService.cs" />
     <Compile Include="Database\ISQLite.cs" />
-=======
     <Compile Include="DetailsPage.xaml.cs">
       <DependentUpon>DetailsPage.xaml</DependentUpon>
     </Compile>
->>>>>>> 4df1b2a16977f713b92a3a4a86d4eb9e6779d567
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
