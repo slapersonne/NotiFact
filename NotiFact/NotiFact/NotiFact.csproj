@@ -38,6 +38,8 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Converters\SeverityToImageConverter.cs" />
+    <Compile Include="Converters\TypeToImageConverter.cs" />
     <Compile Include="Database\DatabaseService.cs" />
     <Compile Include="Database\ISQLite.cs" />
     <Compile Include="DetailsPage.xaml.cs">

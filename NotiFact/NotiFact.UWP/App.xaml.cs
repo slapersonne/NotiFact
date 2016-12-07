@@ -52,6 +52,7 @@ namespace NotiFact.UWP
                 this.DebugSettings.EnableFrameRateCounter = true;
             }
 #endif
+            InitNotificationsAsync();
 
             Frame rootFrame = Window.Current.Content as Frame;
 
