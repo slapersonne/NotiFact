@@ -1,10 +1,6 @@
 ﻿using NotiFact.Models;
 using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace NotiFact.Converters
@@ -19,11 +15,11 @@ namespace NotiFact.Converters
             switch (type)
             {
                 case NotificationType.Maintenance:
-                    return "";                   
+                    return "maintenance.png";                   
                 case NotificationType.Security:
-                    return "";
+                    return "security.png";
                 default:
-                    return "";
+                    return "appicon.png";
             }
         }
 

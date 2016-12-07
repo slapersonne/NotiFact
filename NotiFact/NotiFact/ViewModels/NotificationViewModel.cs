@@ -17,6 +17,7 @@ namespace NotiFact
 
         public Command ReturnCommand { get; protected set; }
         public Command AcknowledgeCommand { get; protected set; }
+        public Command TreatCommand { get; protected set; }
 
         public NotificationViewModel(INavigation nav)
         {
@@ -28,12 +29,30 @@ namespace NotiFact
                 Author = "FX12226",
                 CreationDate = DateTime.Now,
                 IsRead = false,
+                IsDone = false,
                 Severity = 2,
                 Type = NotificationType.Maintenance
             };
 
             ReturnCommand = new Command(ExecuteReturn);
             AcknowledgeCommand = new Command(ExecuteAcknowledge, CanAcknowledge);
+            TreatCommand = new Command(ExecuteTreat, CanTreat);
+        }
+
+        private bool CanTreat(object arg)
+        {
+            return !Notification.IsDone;
+        }
+
+        private void ExecuteTreat(object obj)
+        {
+            Notification.IsRead = true;
+            Notification.IsDone = true;
+            OnPropertyChanged("Notification");
+            OnPropertyChanged("Notification.IsRead");
+            OnPropertyChanged("Notification.IsDone");
+            AcknowledgeCommand.ChangeCanExecute();
+            TreatCommand.ChangeCanExecute();
         }
 
         private bool CanAcknowledge(object arg)
@@ -45,8 +64,10 @@ namespace NotiFact
         {
             Notification.IsRead = true;
             OnPropertyChanged("Notification");
+
+            OnPropertyChanged("Notification.IsRead");
+            OnPropertyChanged("Notification.IsDone");
             AcknowledgeCommand.ChangeCanExecute();
-            ExecuteReturn(obj);
         }
 
         private void ExecuteReturn(object obj)

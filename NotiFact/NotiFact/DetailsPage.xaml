@@ -1,31 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:NotiFact.Converters;assembly=NotiFact"
              x:Class="NotiFact.DetailsPage">
-  <Grid>
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <converters:TypeToImageConverter x:Key="TypeToImageConverter" />
+      <converters:SeverityToImageConverter x:Key="SeverityToImageConverter" />
+      <converters:ReadToColorConverter x:Key="ReadToColorConverter" />
+      <converters:DoneToColorConverter x:Key="DoneToColorConverter" />
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <Grid Padding="5" BackgroundColor="White">
     <Grid.RowDefinitions>
-      <RowDefinition Height="20"/>
-      <RowDefinition Height="*"/>
-      <RowDefinition Height="3*"/>
-      <RowDefinition Height="*"/>
-      <RowDefinition Height="*"/>
+      <RowDefinition Height="0.2*"/>
+      <RowDefinition Height="0.5*"/>
+      <RowDefinition Height="0.1*"/>
+      <RowDefinition Height="0.1*"/>
+      <RowDefinition Height="0.1*"/>
     </Grid.RowDefinitions>
-    <Label Grid.Row="0" Text="NOTIFACT" />
-    <Grid Grid.Row="1">
+    <Grid Grid.Row="0">
       <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="*" />
-        <ColumnDefinition Width="3*" />
-        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="0.15*"></ColumnDefinition>
+        <ColumnDefinition Width="0.7*"></ColumnDefinition>
+        <ColumnDefinition Width="0.15*"></ColumnDefinition>
       </Grid.ColumnDefinitions>
-      <Label Grid.Column="0" Text="{Binding Notification.Type}" HorizontalOptions="Start" VerticalOptions="Center"/>
+      <Image Grid.Column="0" Source="{Binding Notification.Type, Converter={StaticResource TypeToImageConverter}}" HorizontalOptions="Start" VerticalOptions="Center"/>
       <Label Grid.Column="1" Text="{Binding Notification.Title}" HorizontalOptions="Start" VerticalOptions="Center"/>
-      <Label Grid.Column="2" Text="{Binding Notification.Severity}" HorizontalOptions="End" VerticalOptions="Center"/>
+      <Label Grid.Column="2" Text="{Binding Notification.Severity, Converter={StaticResource SeverityToImageConverter}}" HorizontalOptions="End" VerticalOptions="Center"/>
     </Grid>
-    <StackLayout Grid.Row="2" Orientation="Vertical">
+    <StackLayout Grid.Row="1" Orientation="Vertical">
       <Label Text="Description" />
       <Label Text="{Binding Notification.Message}" VerticalOptions="Center"/>
     </StackLayout>
-    <Button Grid.Row="3" Text="PRIS EN COMPTE" Command="{Binding AcknowledgeCommand}"/>
-    <Button Grid.Row="4" Text="RETOUR" Command="{Binding ReturnCommand}"/>
+    <Button Grid.Row="2" Text="PRIS EN COMPTE" 
+            Command="{Binding AcknowledgeCommand}" 
+            BackgroundColor="{Binding Notification.IsRead, Converter={StaticResource ReadToColorConverter}}" 
+            TextColor="White" FontAttributes="Bold"/>
+    <Button Grid.Row="3" Text="TRAITÉ" 
+            Command="{Binding TreatCommand}" 
+            BackgroundColor="{Binding Notification.IsDone, Converter={StaticResource DoneToColorConverter}}" 
+            TextColor="White" FontAttributes="Bold"/>
+    <Button Grid.Row="4" Text="RETOUR" 
+            Command="{Binding ReturnCommand}" 
+            BackgroundColor="Gray" 
+            TextColor="White" FontAttributes="Bold"/>
   </Grid>
 </ContentPage>

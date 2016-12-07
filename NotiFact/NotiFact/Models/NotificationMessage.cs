@@ -21,6 +21,7 @@ namespace NotiFact.Models
         public bool IsRead { get; set; }
         public int Severity { get; set; }
         public NotificationType Type { get; set; }
+        public bool IsDone { get; set; }
 
         public NotificationMessage() { }                
     }
