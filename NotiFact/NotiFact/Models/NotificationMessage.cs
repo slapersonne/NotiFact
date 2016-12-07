@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NotiFact.Models
 {
-    class NotificationMessage
+    public class NotificationMessage
     {
         public string Title { get; set; }
         public string Message { get; set; }
