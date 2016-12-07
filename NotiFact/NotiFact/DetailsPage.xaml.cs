@@ -7,7 +7,8 @@ namespace NotiFact
     {
         public DetailsPage()
         {
-            InitializeComponent();
+            BindingContext = new NotificationViewModel(Navigation);
+            InitializeComponent();            
         }
     }
 }

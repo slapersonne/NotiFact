@@ -1,11 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:NotiFact;assembly=NotiFact"
              x:Class="NotiFact.DetailsPage">
-  <ContentPage.BindingContext>
-    <local:NotificationViewModel />
-  </ContentPage.BindingContext>
   <Grid>
     <Grid.RowDefinitions>
       <RowDefinition Height="20"/>
@@ -29,7 +25,7 @@
       <Label Text="Description" />
       <Label Text="{Binding Notification.Message}" VerticalOptions="Center"/>
     </StackLayout>
-    <Button Grid.Row="3" Text="PRIS EN COMPTE"/>
-    <Button Grid.Row="4" Text="ACCUEIL"/>
+    <Button Grid.Row="3" Text="PRIS EN COMPTE" Command="{Binding AcknowledgeCommand}"/>
+    <Button Grid.Row="4" Text="RETOUR" Command="{Binding ReturnCommand}"/>
   </Grid>
 </ContentPage>

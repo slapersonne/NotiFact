@@ -5,15 +5,22 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace NotiFact
 {
     public class NotificationViewModel : INotifyPropertyChanged
     {
         private NotificationMessage _notification;
+        private INavigation _nav;
 
-        public NotificationViewModel()
+        public Command ReturnCommand { get; protected set; }
+        public Command AcknowledgeCommand { get; protected set; }
+
+        public NotificationViewModel(INavigation nav)
         {
+            _nav = nav;
             Notification = new NotificationMessage
             {
                 Title = "Message Title",
@@ -24,6 +31,27 @@ namespace NotiFact
                 Severity = 2,
                 Type = "Securité"
             };
+
+            ReturnCommand = new Command(ExecuteReturn);
+            AcknowledgeCommand = new Command(ExecuteAcknowledge, CanAcknowledge);
+        }
+
+        private bool CanAcknowledge(object arg)
+        {
+            return !Notification.IsRead;
+        }
+
+        private void ExecuteAcknowledge(object obj)
+        {
+            Notification.IsRead = true;
+            OnPropertyChanged("Notification");
+            AcknowledgeCommand.ChangeCanExecute();
+            ExecuteReturn(obj);
+        }
+
+        private void ExecuteReturn(object obj)
+        {
+            _nav.PopAsync();
         }
 
         public NotificationMessage Notification
