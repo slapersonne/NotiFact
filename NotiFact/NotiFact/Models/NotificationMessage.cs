@@ -6,6 +6,12 @@ using System.Threading.Tasks;
 
 namespace NotiFact.Models
 {
+    public enum NotificationType
+    {
+        Maintenance,
+        Security,
+    }
+
     public class NotificationMessage
     {
         public string Title { get; set; }
@@ -14,7 +20,7 @@ namespace NotiFact.Models
         public DateTime CreationDate { get; set; }
         public bool IsRead { get; set; }
         public int Severity { get; set; }
-        public string Type { get; set; }
+        public NotificationType Type { get; set; }
 
         public NotificationMessage() { }                
     }
